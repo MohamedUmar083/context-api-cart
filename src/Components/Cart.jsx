@@ -56,7 +56,7 @@ const Cart = () => {
                     <div className="card-body">
                       <div className="row">
                         <div className="col-6">
-                          <div id="carouselExample" className="carousel slide">
+                          <div id={index} className="carousel slide">
                             <div className="carousel-inner">
                               <div className="carousel-item active">
                                 <img
@@ -80,7 +80,7 @@ const Cart = () => {
                             <button
                               className="carousel-control-prev"
                               type="button"
-                              data-bs-target="#carouselExample"
+                              data-bs-target={`#${index}`}
                               data-bs-slide="prev"
                             >
                               <span
@@ -92,7 +92,7 @@ const Cart = () => {
                             <button
                               className="carousel-control-next"
                               type="button"
-                              data-bs-target="#carouselExample"
+                              data-bs-target={`#${index}`}
                               data-bs-slide="next"
                             >
                               <span
